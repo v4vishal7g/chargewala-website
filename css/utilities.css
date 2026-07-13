@@ -1,0 +1,83 @@
+/*=====================================
+        UTILITIES
+======================================*/
+
+.section{
+
+    padding:120px 0;
+
+}
+
+.section-title{
+
+    font-size:48px;
+
+    font-weight:800;
+
+    color:var(--dark);
+
+    line-height:1.15;
+
+    margin-bottom:18px;
+
+}
+
+.section-subtitle{
+
+    font-size:19px;
+
+    color:var(--gray);
+
+    line-height:1.8;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.glass{
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.75);
+
+    border:1px solid rgba(255,255,255,.6);
+
+}
+
+.shadow-hover{
+
+    transition:.35s;
+
+}
+
+.shadow-hover:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
+
+}
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:#ECFDF5;
+
+    color:#059669;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}

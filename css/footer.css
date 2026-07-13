@@ -1,0 +1,514 @@
+/*=====================================
+        CHARGEWALA FOOTER
+======================================*/
+
+.footer{
+
+    background:linear-gradient(
+        135deg,
+        #07111F,
+        #0E1C31
+    );
+
+    color:#E2E8F0;
+
+    padding:90px 0 0;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/*=====================================
+        GRID
+======================================*/
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.3fr;
+
+    gap:50px;
+
+    padding-bottom:60px;
+
+}
+
+/*=====================================
+        BRAND
+======================================*/
+
+.footer-logo{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#fff;
+
+    margin-bottom:20px;
+
+}
+
+.footer-logo span{
+
+    color:#fff;
+
+}
+.footer-logo{
+
+height:90px;
+
+width:auto;
+
+}
+
+.footer-col p{
+
+    color:#CBD5E1;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+/*=====================================
+        RATING
+======================================*/
+
+.footer-rating{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#FACC15;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.footer-rating span{
+
+    color:#CBD5E1;
+
+    font-size:15px;
+
+}
+
+/*=====================================
+        HEADINGS
+======================================*/
+
+.footer-col h3{
+
+    color:#fff;
+
+    margin-bottom:22px;
+
+    font-size:22px;
+
+}
+
+/*=====================================
+        LINKS
+======================================*/
+
+.footer-col ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.footer-col ul li{
+
+    color:#CBD5E1;
+
+    transition:.3s;
+
+}
+
+.footer-col ul li a{
+
+    color:#CBD5E1;
+
+    transition:.3s;
+
+}
+
+.footer-col ul li a:hover{
+
+    color:var(--primary);
+
+    padding-left:6px;
+
+}
+
+/*=====================================
+        CONTACT
+======================================*/
+
+.footer-col ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.footer-col ul li i{
+
+    color:var(--primary);
+
+    width:18px;
+
+}
+
+/*=====================================
+        SOCIAL
+======================================*/
+
+.footer-social{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-top:30px;
+
+}
+
+.footer-social a{
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+background:var(--primary);
+
+transform:translateY(-6px) scale(1.08);
+
+box-shadow:
+
+0 15px 30px rgba(0,210,106,.35);
+
+}
+
+/*=====================================
+        BOTTOM
+======================================*/
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:25px 0;
+
+}
+
+.footer-bottom .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.footer-bottom p{
+
+    color:#94A3B8;
+
+}
+
+.footer-bottom-links{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.footer-bottom-links a{
+
+    color:#94A3B8;
+
+    transition:.3s;
+
+}
+
+.footer-bottom-links a:hover{
+
+    color:var(--primary);
+
+}
+
+/*=====================================
+        RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer{
+
+padding-top:70px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+gap:45px;
+
+text-align:center;
+
+}
+
+.footer-logo{
+
+justify-content:center;
+
+}
+
+.footer-rating{
+
+justify-content:center;
+
+}
+
+.footer-col ul li{
+
+justify-content:center;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+.footer-bottom .container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.footer-bottom-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
+
+/*=====================================
+        FOOTER REVEAL
+======================================*/
+
+.footer{
+
+opacity:0;
+
+transform:translateY(60px);
+
+animation:footerFade .8s ease forwards;
+
+animation-delay:.2s;
+
+}
+
+@keyframes footerFade{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.footer-col ul li a{
+
+position:relative;
+
+}
+
+.footer-col ul li a::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-4px;
+
+width:0;
+
+height:2px;
+
+background:var(--primary);
+
+transition:.3s;
+
+}
+
+.footer-col ul li a:hover::after{
+
+width:100%;
+
+}
+
+/*=====================================
+        SCROLL TOP
+======================================*/
+
+.footer{
+
+position:relative;
+
+}
+
+.footer-top{
+
+position:absolute;
+
+right:35px;
+
+top:-28px;
+
+width:58px;
+
+height:58px;
+
+border:none;
+
+border-radius:50%;
+
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--primary-dark)
+);
+
+color:#fff;
+
+font-size:22px;
+
+cursor:pointer;
+
+box-shadow:0 15px 35px rgba(0,210,106,.35);
+
+transition:.35s;
+
+}
+
+.footer-top:hover{
+
+transform:translateY(-6px);
+
+}
+
+.footer::before{
+
+content:"";
+
+position:absolute;
+
+left:-150px;
+
+top:-150px;
+
+width:320px;
+
+height:320px;
+
+background:rgba(0,210,106,.08);
+
+border-radius:50%;
+
+filter:blur(60px);
+
+}
+
+.footer::after{
+
+content:"";
+
+position:absolute;
+
+right:-120px;
+
+bottom:-120px;
+
+width:260px;
+
+height:260px;
+
+background:rgba(59,130,246,.08);
+
+border-radius:50%;
+
+filter:blur(60px);
+
+}

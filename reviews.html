@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Customer Reviews | ChargeWala
+
+    </title>
+
+    <meta
+        name="description"
+        content="Read genuine customer reviews and ratings about ChargeWala EV Charging Network across India.">
+
+    <meta
+        name="keywords"
+        content="ChargeWala Reviews, EV Charging Reviews, Customer Reviews">
+
+    <meta
+        name="author"
+        content="ChargeWala">
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/design-system.css">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="css/reviews.css">
+
+    <link rel="stylesheet" href="css/effects.css">
+    <link rel="stylesheet" href="css/dark.css">
+
+</head>
+
+<body>
+
+    <!-- Cursor -->
+
+    <div class="cursor-glow"></div>
+
+    <!-- Scroll Progress -->
+
+    <div class="scroll-progress"></div>
+
+    <!-- Navbar -->
+
+    <div id="navbar"></div>
+
+    <main>
+
+        <!-- =====================================
+                    HERO
+        ====================================== -->
+
+        <section class="reviews-hero section page-hero">
+
+<div class="hero-blob blob-green"></div>
+
+<div class="hero-blob blob-blue"></div>
+
+            <div class="container">
+
+                <div class="reviews-content fade-up">
+
+                    <div class="section-badge">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>
+
+                            Customer Reviews
+
+                        </span>
+
+                    </div>
+
+                    <h1 class="section-title">
+
+                        Trusted By
+
+                        <span class="gradient-text">
+
+                            EV Drivers
+
+                        </span>
+
+                    </h1>
+
+                    <p class="section-description">
+
+                        Discover what EV owners say about their charging
+                        experience with ChargeWala. Real reviews from
+                        verified users across India.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+                REVIEW SUMMARY
+        ====================================== -->
+
+        <section class="review-summary section">
+
+            <div class="container">
+
+                <div class="summary-card card">
+
+                    <div class="summary-left">
+
+                        <h2>
+
+                            4.9
+
+                        </h2>
+
+                        <div class="stars">
+
+                            ★★★★★
+
+                        </div>
+
+                        <p>
+
+                            Based on 500+ Verified Reviews
+
+                        </p>
+
+                    </div>
+
+                    <div class="summary-right">
+
+                        <div class="rating-bar">
+
+                            <span>5★</span>
+
+                            <div class="bar">
+
+                                <div
+                                    class="fill"
+                                    style="width:92%">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rating-bar">
+
+                            <span>4★</span>
+
+                            <div class="bar">
+
+                                <div
+                                    class="fill"
+                                    style="width:72%">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rating-bar">
+
+                            <span>3★</span>
+
+                            <div class="bar">
+
+                                <div
+                                    class="fill"
+                                    style="width:28%">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rating-bar">
+
+                            <span>2★</span>
+
+                            <div class="bar">
+
+                                <div
+                                    class="fill"
+                                    style="width:8%">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rating-bar">
+
+                            <span>1★</span>
+
+                            <div class="bar">
+
+                                <div
+                                    class="fill"
+                                    style="width:3%">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================
+            LATEST REVIEWS
+====================================== -->
+
+<section class="reviews-list section">
+
+<div class="container">
+
+<div class="section-header">
+
+<div class="section-badge">
+
+<i class="fa-solid fa-comments"></i>
+
+<span>
+
+Latest Customer Reviews
+
+</span>
+
+</div>
+
+<h2 class="section-title">
+
+Real Reviews
+
+</h2>
+
+<p class="section-description">
+
+Live reviews from ChargeWala users.
+
+</p>
+
+</div>
+
+<!-- Loading -->
+
+<div
+id="reviewsLoading"
+class="loading-state">
+
+Loading Reviews...
+
+</div>
+
+<!-- Empty -->
+
+<div
+id="reviewsEmpty"
+class="empty-state"
+style="display:none;">
+
+No Reviews Yet
+
+</div>
+
+<!-- Dynamic Reviews -->
+
+<div
+id="reviewsContainer"
+class="reviews-grid">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+        REVIEW FILTER
+====================================== -->
+
+<section class="review-filter section">
+
+<div class="container">
+
+<div class="filter-wrapper">
+
+<div class="filter-buttons">
+
+<button class="filter-btn active">
+
+All Reviews
+
+</button>
+
+<button class="filter-btn">
+
+★★★★★
+
+</button>
+
+<button class="filter-btn">
+
+★★★★☆
+
+</button>
+
+<button class="filter-btn">
+
+★★★☆☆
+
+</button>
+
+</div>
+
+<div class="review-search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search reviews...">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+        LOAD MORE
+====================================== -->
+
+<section class="load-more-section">
+
+<div class="container">
+
+<div class="load-more-wrapper">
+
+<button class="btn">
+
+Load More Reviews
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+<!-- =====================================
+        WRITE REVIEW CTA
+====================================== -->
+
+<section class="review-cta section">
+
+<div class="container">
+
+<div class="review-cta-box">
+
+<div class="section-badge">
+
+<i class="fa-solid fa-star"></i>
+
+<span>
+
+Share Your Experience
+
+</span>
+
+</div>
+
+<h2>
+
+Already Using ChargeWala?
+
+</h2>
+
+<p>
+
+Download the ChargeWala App and share your charging experience.
+Your review helps other EV drivers discover trusted charging stations.
+
+</p>
+
+<div class="cta-buttons">
+
+<a
+href="download.html"
+class="btn">
+
+<i class="fa-solid fa-download"></i>
+
+Download App
+
+</a>
+
+<a
+href="find-stations.html"
+class="btn-outline">
+
+<i class="fa-solid fa-location-dot"></i>
+
+Find Stations
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<div id="footer"></div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<!-- Firebase Config -->
+<script src="firebase-config.js"></script>
+
+<!-- Website JS -->
+<script src="js/navbar.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/app.js"></script>
+<script src="js/footer.js"></script>
+
+<!-- Live Reviews -->
+<script src="js/firebase-reviews.js"></script>
+
+</body>
+
+</html>

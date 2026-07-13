@@ -1,0 +1,324 @@
+/* ===========================
+   ChargeWala Global Styles
+=========================== */
+
+@import url("variables.css");
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*=====================================
+        GLOBAL BACKGROUND
+======================================*/
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+    overflow-x:hidden;
+    position:relative;
+    background:#fff;
+}
+
+img{
+
+transition:.35s;
+
+}
+
+img:hover{
+
+transform:scale(1.01);
+
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    font-family:inherit;
+    background:none;
+}
+
+input,
+textarea,
+select{
+    font-family:inherit;
+    outline:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+    width:min(1200px,92%);
+    margin:0 auto;
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+padding:16px 32px;
+
+border-radius:999px;
+
+background:var(--primary);
+
+color:#fff;
+
+font-size:16px;
+font-weight:600;
+
+transition:all .35s ease;
+
+}
+
+.btn:hover{
+
+transform:translateY(-4px);
+
+background:linear-gradient(
+135deg,
+var(--primary-dark),
+var(--primary)
+);
+
+box-shadow:0 20px 45px rgba(0,210,106,.30);
+
+}
+
+.btn-outline{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+padding:16px 32px;
+
+border-radius:999px;
+
+border:2px solid var(--primary);
+
+background:#fff;
+
+color:var(--primary);
+
+font-size:16px;
+font-weight:600;
+
+transition:all .35s ease;
+
+}
+
+.btn-outline:hover{
+
+background:var(--primary);
+
+color:#fff;
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 45px rgba(0,210,106,.25);
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+main{
+    min-height:100vh;
+}
+
+/*=====================================
+        COMMON PAGE HERO
+======================================*/
+
+.page-hero{
+
+position:relative;
+
+overflow:hidden;
+
+background:
+radial-gradient(circle at top right,
+rgba(0,210,106,.18),
+transparent 35%),
+
+radial-gradient(circle at bottom left,
+rgba(79,172,254,.15),
+transparent 35%),
+
+linear-gradient(
+180deg,
+#ffffff,
+#f8fbff
+);
+
+}
+
+/* Glow Blobs */
+
+.page-hero .hero-blob{
+
+position:absolute;
+
+border-radius:50%;
+
+filter:blur(90px);
+
+opacity:.7;
+
+pointer-events:none;
+
+z-index:0;
+
+}
+
+.page-hero .blob-green{
+
+width:320px;
+
+height:320px;
+
+background:#00D26A;
+
+top:-80px;
+
+right:-80px;
+
+}
+
+.page-hero .blob-blue{
+
+width:280px;
+
+height:280px;
+
+background:#4FACFE;
+
+bottom:-100px;
+
+left:-100px;
+
+}
+
+/* Hero Content */
+
+.page-hero .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+/*=====================================
+        GLOBAL PREMIUM BACKGROUND
+======================================*/
+
+/*=====================================
+        GLOBAL PREMIUM BACKGROUND
+======================================*/
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+z-index:-1;
+
+pointer-events:none;
+
+background:
+
+radial-gradient(circle at 10% 10%,
+rgba(79,172,254,.08),
+transparent 30%),
+
+radial-gradient(circle at 90% 12%,
+rgba(0,210,106,.08),
+transparent 30%),
+
+radial-gradient(circle at 15% 85%,
+rgba(0,210,106,.06),
+transparent 35%),
+
+radial-gradient(circle at 85% 80%,
+rgba(79,172,254,.06),
+transparent 35%),
+
+linear-gradient(
+180deg,
+#ffffff,
+#f8fbff,
+#ffffff);
+
+}
+
+/*=====================================
+        GLOBAL SECTIONS
+======================================*/
+
+section{
+padding:90px 0;
+position:relative;
+
+background:transparent;
+
+}
+
+.card{
+
+background:#fff;
+
+border-radius:20px;
+
+box-shadow:
+0 10px 30px rgba(15,23,42,.08);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.12);
+
+}

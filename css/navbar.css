@@ -1,0 +1,255 @@
+/* ==========================================
+        CHARGEWALA PREMIUM NAVBAR
+========================================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,.25);
+    transition:all .35s ease;
+}
+
+.navbar.scrolled{
+    background:rgba(255,255,255,.92);
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+/* =======================
+        CONTAINER
+======================= */
+
+.nav-container{
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* =======================
+          LOGO
+======================= */
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+text-decoration:none;
+
+}
+
+.logo img{
+
+height:72px;
+
+width:auto;
+
+display:block;
+
+transition:.3s ease;
+
+}
+
+.logo img:hover{
+
+transform:scale(1.05);
+
+}
+/* =======================
+        NAV LINKS
+======================= */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:34px;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    position:relative;
+    color:var(--text);
+    font-size:15px;
+    font-weight:500;
+    transition:all .3s ease;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-7px;
+    width:0;
+    height:2px;
+    border-radius:50px;
+    background:var(--primary);
+    transition:width .3s ease;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.active-link{
+    color:var(--primary)!important;
+}
+
+.active-link::after{
+    width:100%;
+}
+
+/* =======================
+        RIGHT SIDE
+======================= */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+/* =======================
+       THEME BUTTON
+======================= */
+
+.theme-btn{
+    width:46px;
+    height:46px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    cursor:pointer;
+    font-size:18px;
+    transition:all .35s ease;
+}
+
+.theme-btn:hover{
+    transform:rotate(20deg);
+}
+
+/* =======================
+      MENU BUTTON
+======================= */
+
+.menu-btn{
+    width:48px;
+    height:48px;
+    border:none;
+    background:transparent;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+}
+
+.menu-btn span{
+    width:26px;
+    height:3px;
+    border-radius:50px;
+    background:var(--dark);
+    transition:all .35s ease;
+}
+
+/* Hamburger Animation */
+
+.menu-btn.active span:nth-child(1){
+    transform:translateY(9px) rotate(45deg);
+}
+
+.menu-btn.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-btn.active span:nth-child(3){
+    transform:translateY(-9px) rotate(-45deg);
+}
+
+/* =======================
+         OVERLAY
+======================= */
+
+.menu-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(4px);
+    opacity:0;
+    visibility:hidden;
+    transition:all .35s ease;
+    z-index:998;
+}
+
+.menu-overlay.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/* =======================
+       RESPONSIVE
+======================= */
+
+@media(max-width:992px){
+
+    .nav-right{
+        display:none;
+    }
+
+    .menu-btn{
+        display:flex;
+    }
+
+    .nav-links{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:300px;
+        height:100vh;
+        background:#fff;
+        flex-direction:column;
+        align-items:flex-start;
+        justify-content:flex-start;
+        gap:28px;
+        padding:110px 35px;
+        box-shadow:-10px 0 40px rgba(0,0,0,.08);
+        transition:right .35s ease;
+        z-index:999;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .logo{
+        font-size:22px;
+    }
+
+    .nav-container{
+        height:72px;
+    }
+
+    .nav-links{
+        width:100%;
+    }
+
+}

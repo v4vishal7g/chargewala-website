@@ -1,0 +1,96 @@
+/*=====================================
+        TRUST & STATS
+======================================*/
+
+.stats{
+    background:#fff;
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+.stats-header{
+    text-align:center;
+}
+
+/* ==========================
+        GRID
+========================== */
+
+.stats-grid{
+    gap:25px;
+}
+
+/* ==========================
+        CARD
+========================== */
+
+.stat-card{
+    padding:40px 30px;
+    text-align:center;
+}
+
+/* ==========================
+        ICON
+========================== */
+
+.stat-icon{
+    width:72px;
+    height:72px;
+    margin:0 auto 22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    background:#ECFDF5;
+    color:var(--primary);
+    font-size:30px;
+}
+
+/* ==========================
+        NUMBER
+========================== */
+
+.stat-number{
+    font-size:42px;
+    font-weight:800;
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+/* ==========================
+        TITLE
+========================== */
+
+.stat-title{
+    font-size:20px;
+    font-weight:700;
+    color:var(--dark);
+    margin-bottom:8px;
+}
+
+/* ==========================
+        SUBTITLE
+========================== */
+
+.stat-subtitle{
+    color:var(--gray);
+    line-height:1.6;
+}
+
+/* ==========================
+        RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .stat-number{
+        font-size:34px;
+    }
+
+    .stat-title{
+        font-size:18px;
+    }
+
+}

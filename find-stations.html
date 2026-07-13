@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find EV Charging Stations | ChargeWala</title>
+
+    <meta name="description"
+        content="Find nearby EV charging stations across India with ChargeWala. Search trusted charging stations and open navigation directly in Google Maps.">
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/design-system.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/stations.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+
+    <!-- Progress -->
+
+    <div class="scroll-progress"></div>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                ⚡ <span>ChargeWala</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a class="active-link" href="find-stations.html">
+                        Find Stations
+                    </a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="reviews.html">Reviews</a></li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-right">
+
+                <a href="#" class="btn">
+                    Download App
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="stations section">
+
+        <div class="container">
+
+            <div class="stations-header section-header">
+
+                <div class="section-badge">
+
+                    📍 Find Charging Stations
+
+                </div>
+
+                <h1 class="section-title">
+
+                    Discover EV Charging Stations Near You
+
+                </h1>
+
+                <p class="section-description">
+
+                    Search trusted ChargeWala charging stations across India.
+                    Open directions instantly in Google Maps.
+
+                </p>
+
+            </div>
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Search station or address">
+
+                <select id="chargerFilter">
+
+                    <option value="">
+                        All Chargers
+                    </option>
+
+                    <option value="Acdd">
+                        AC Charger
+                    </option>
+
+                    <option value="Dcdd">
+                        DC Charger
+                    </option>
+
+                </select>
+
+                <button
+                    id="searchBtn"
+                    class="btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    Search
+
+                </button>
+
+            </div>
+
+            <!-- Dynamic Cards -->
+
+            <div
+                id="stationGrid"
+                class="station-grid grid-3">
+
+            </div>
+
+        </div>
+        <!-- Loading -->
+
+<div
+    id="loadingState"
+    style="display:none;text-align:center;padding:60px 0;">
+
+    <i
+        class="fa-solid fa-spinner fa-spin"
+        style="font-size:42px;color:var(--primary);">
+
+    </i>
+
+    <p style="margin-top:20px;">
+
+        Loading Stations...
+
+    </p>
+
+</div>
+
+<!-- Empty State -->
+
+<div
+    id="emptyState"
+    style="display:none;text-align:center;padding:80px 0;">
+
+    <i
+        class="fa-solid fa-location-dot"
+        style="font-size:60px;color:#cbd5e1;">
+
+    </i>
+
+    <h2 style="margin-top:20px;">
+
+        No Stations Found
+
+    </h2>
+
+    <p>
+
+        Try another search keyword.
+
+    </p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Firebase -->
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+
+
+
+<!-- JS -->
+<div id="footer"></div>
+<script src="js/app.js"></script>
+
+<script src="js/effects.js"></script>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+
+<script src="firebase-config.js"></script>
+
+<script src="js/stations.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/footer.js"></script>
+
+</body>
+
+</html>
+
+  

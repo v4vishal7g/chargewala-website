@@ -1,0 +1,87 @@
+/* ==========================================
+   CHARGEWALA DARK THEME
+========================================== */
+
+body{
+    transition:
+        background-color .35s ease,
+        color .35s ease;
+}
+
+/* Dark Theme */
+
+body.dark{
+
+    --bg:#07111F;
+
+    --white:#111827;
+
+    --text:#F8FAFC;
+
+    --gray:#CBD5E1;
+
+    --border:#1F2937;
+
+    --dark:#F8FAFC;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+/* Navbar */
+
+body.dark .navbar{
+
+    background:rgba(7,17,31,.82);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .navbar.scrolled{
+
+    background:rgba(7,17,31,.96);
+
+}
+
+/* Logo */
+
+body.dark .logo span{
+
+    color:white;
+
+}
+
+/* Links */
+
+body.dark .nav-links a{
+
+    color:#F8FAFC;
+
+}
+
+body.dark .nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+/* Theme Button */
+
+body.dark .theme-btn{
+
+    background:#1E293B;
+
+    color:white;
+
+}
+
+/* Mobile Drawer */
+
+body.dark .nav-links{
+
+    background:#111827;
+
+}

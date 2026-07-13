@@ -1,0 +1,180 @@
+/* ==========================================
+   CHARGEWALA DESIGN SYSTEM
+========================================== */
+
+/* ========= Sections ========= */
+
+.section{
+    position:relative;
+    padding:120px 0;
+}
+
+.section-header{
+    max-width:760px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.section-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 18px;
+    border-radius:999px;
+    background:#ECFDF5;
+    color:#059669;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.section-title{
+    font-size:48px;
+    font-weight:800;
+    line-height:1.15;
+    letter-spacing:-1px;
+    color:var(--dark);
+    margin-bottom:20px;
+}
+
+.section-description{
+    font-size:18px;
+    line-height:1.9;
+    color:var(--gray);
+}
+
+/* ========= Cards ========= */
+
+.card{
+    background:#fff;
+    border:1px solid #ECECEC;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 12px 35px rgba(0,0,0,.05);
+    transition:all .35s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 35px 70px rgba(0,0,0,.12);
+}
+
+/* ========= Glass ========= */
+
+.glass-card{
+    background:rgba(255,255,255,.08) !important;
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.12);
+}
+
+/* ========= Icons ========= */
+
+.icon-box{
+    width:72px;
+    height:72px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:20px;
+    background:#ECFDF5;
+    color:var(--primary);
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+/* ========= Layout ========= */
+
+.grid{
+    display:grid;
+    gap:30px;
+}
+
+.grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.grid-4{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.flex{
+    display:flex;
+}
+
+.flex-center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ========= Utilities ========= */
+
+.gradient-text{
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.divider{
+    width:100px;
+    height:4px;
+    margin:30px auto;
+    border-radius:999px;
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+}
+
+/* ========= Responsive ========= */
+
+@media (max-width:992px){
+
+    .grid-4{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .grid-3{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .section{
+        padding:90px 0;
+    }
+
+    .section-title{
+        font-size:36px;
+    }
+
+    .section-description{
+        font-size:17px;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4{
+        grid-template-columns:1fr;
+    }
+
+}
