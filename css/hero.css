@@ -751,3 +751,33 @@
     }
 
 }
+
+/* FIX: Hero EV image visibility */
+
+.car-frame .ev-car {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+    z-index: 5 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    transform: none !important;
+    filter: none !important;
+}
+
+.car-frame {
+    position: relative;
+    overflow: hidden;
+}
+
+.car-glow {
+    z-index: 1 !important;
+    pointer-events: none;
+}
