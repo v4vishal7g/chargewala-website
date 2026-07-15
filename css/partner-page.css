@@ -876,3 +876,13 @@ body{
     }
 
 }
+
+/* MOBILE HERO TOP SPACE FIX */
+
+@media(max-width:520px){
+
+    .partner{
+        padding-top:65px !important;
+    }
+
+}
