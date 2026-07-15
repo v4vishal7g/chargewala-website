@@ -403,3 +403,52 @@ body{
     }
 
 }
+
+/*=====================================
+    PARTNER HERO FINAL HEIGHT POLISH
+======================================*/
+
+@media(min-width:1101px){
+
+    .partner{
+        padding-top:70px !important;
+        padding-bottom:55px !important;
+    }
+
+    .partner-left h1{
+        margin-top:18px;
+        margin-bottom:16px;
+    }
+
+    .partner-left > p{
+        margin-bottom:0;
+    }
+
+    .partner-list{
+        margin:24px 0 22px;
+        gap:8px;
+    }
+
+    .partner-item{
+        min-height:48px;
+    }
+
+    .partner-left > .btn{
+        min-height:48px;
+    }
+
+    .partner-note{
+        margin-top:10px;
+        margin-bottom:0;
+    }
+
+    .partner-card{
+        padding-top:38px;
+        padding-bottom:38px;
+    }
+
+    .partner-stat{
+        min-height:55px;
+    }
+
+}
