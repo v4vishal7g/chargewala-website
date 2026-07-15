@@ -1,4 +1,23 @@
 /*=====================================
+        DOWNLOAD HERO BUTTONS
+======================================*/
+
+.download-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/*=====================================
         APP SHOWCASE
 ======================================*/
 
@@ -501,5 +520,34 @@ padding:45px 25px;
 font-size:32px;
 
 }
+
+}
+
+/*=====================================
+        DOWNLOAD HERO MOBILE BUTTONS
+======================================*/
+
+@media(max-width:768px){
+
+    .download-buttons{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+        width:100%;
+
+    }
+
+    .download-buttons .btn,
+    .download-buttons .btn-outline{
+
+        width:min(320px,100%);
+
+        justify-content:center;
+
+    }
 
 }
