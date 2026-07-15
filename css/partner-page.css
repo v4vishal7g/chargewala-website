@@ -31,11 +31,11 @@ body{
 }
 
 .partner-left h1{
-    max-width:760px;
+    max-width:800px;
     margin:28px 0 24px;
-    font-size:clamp(48px,5vw,78px);
+    font-size:clamp(42px,3.8vw,64px);
     line-height:1.08;
-    letter-spacing:-3px;
+    letter-spacing:-2px;
 }
 
 .partner-left > p{
