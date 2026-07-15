@@ -39,6 +39,26 @@
 }
 
 /*=====================================
+        ABOUT HERO BUTTONS
+======================================*/
+
+.about-content .hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:30px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=====================================
         STORY
 ======================================*/
 
@@ -701,5 +721,30 @@ padding:40px 25px;
 font-size:34px;
 
 }
+
+}
+
+/*=====================================
+        ABOUT HERO MOBILE BUTTONS
+======================================*/
+
+@media(max-width:576px){
+
+    .about-content .hero-buttons{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        width:100%;
+
+    }
+
+    .about-content .hero-buttons .btn,
+    .about-content .hero-buttons .btn-outline{
+
+        width:min(320px,90%);
+
+    }
 
 }
