@@ -452,3 +452,256 @@ body{
     }
 
 }
+
+/*=====================================
+    PARTNER HERO FINAL POSITION FIX
+======================================*/
+
+@media(min-width:1101px){
+
+    .partner{
+        padding-top:50px !important;
+        padding-bottom:45px !important;
+    }
+
+    .partner .partner-wrapper{
+        transform:translateY(-15px);
+    }
+
+}
+
+/*=====================================
+    PARTNER PAGE FINAL MOBILE RESPONSIVE
+======================================*/
+
+@media(max-width:850px){
+
+    .partner{
+        min-height:auto !important;
+        padding:100px 0 65px !important;
+    }
+
+    .partner .partner-wrapper{
+        min-height:auto !important;
+        grid-template-columns:1fr !important;
+        gap:45px !important;
+        transform:none !important;
+    }
+
+    .partner-left{
+        width:100%;
+        text-align:center;
+    }
+
+    .partner-badge{
+        margin:0 auto;
+    }
+
+    .partner-left h1{
+        max-width:650px;
+        margin:24px auto 18px;
+        font-size:clamp(38px,9vw,54px);
+        line-height:1.08;
+        letter-spacing:-1.5px;
+    }
+
+    .partner-left > p{
+        max-width:600px;
+        margin:0 auto;
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .partner-list{
+        width:100%;
+        max-width:550px;
+        margin:30px auto 25px;
+        gap:12px;
+        text-align:left;
+    }
+
+    .partner-item{
+        min-height:54px;
+        font-size:15px;
+    }
+
+    .partner-icon{
+        width:44px;
+        height:44px;
+        flex:0 0 44px;
+    }
+
+    .partner-left > .btn{
+        width:100%;
+        max-width:550px;
+        min-width:0;
+        margin:0 auto;
+        justify-content:center;
+    }
+
+    .partner-note{
+        margin:12px auto 0;
+        text-align:center;
+        font-size:12px !important;
+    }
+
+    .partner-right{
+        width:100%;
+    }
+
+    .partner-card{
+        width:100%;
+        max-width:600px;
+        margin:0 auto;
+        padding:42px 35px;
+        border-radius:28px;
+    }
+
+    .partner-card h2{
+        margin-bottom:25px;
+        font-size:36px;
+        line-height:1.15;
+        text-align:left;
+    }
+
+    .partner-stat{
+        min-height:60px;
+        gap:20px;
+    }
+
+    .partner-stat span{
+        font-size:14px;
+        text-align:left;
+    }
+
+    .partner-stat strong{
+        font-size:14px;
+        text-align:right;
+    }
+
+    .partner-card .btn{
+        width:100%;
+        margin-top:25px;
+        justify-content:center;
+    }
+
+}
+
+
+/*=====================================
+    SMALL MOBILE FINAL FIX
+======================================*/
+
+@media(max-width:520px){
+
+    .partner{
+        padding:90px 0 55px !important;
+    }
+
+    .partner .partner-wrapper{
+        gap:38px !important;
+    }
+
+    .partner-badge{
+        font-size:12px;
+    }
+
+    .partner-left h1{
+        margin:22px auto 16px;
+        font-size:38px;
+        line-height:1.1;
+        letter-spacing:-1.3px;
+    }
+
+    .partner-left > p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+    .partner-list{
+        margin:25px auto 22px;
+        gap:10px;
+    }
+
+    .partner-item{
+        min-height:50px;
+        font-size:13px;
+        gap:14px;
+    }
+
+    .partner-icon{
+        width:42px;
+        height:42px;
+        flex:0 0 42px;
+    }
+
+    .partner-left > .btn{
+        min-height:50px;
+        font-size:14px;
+    }
+
+    .partner-note{
+        font-size:11px !important;
+        line-height:1.6;
+    }
+
+    .partner-card{
+        padding:32px 22px;
+        border-radius:24px;
+    }
+
+    .partner-card h2{
+        margin-bottom:20px;
+        font-size:30px;
+    }
+
+    .partner-stat{
+        min-height:58px;
+        gap:12px;
+    }
+
+    .partner-stat span,
+    .partner-stat strong{
+        font-size:12px;
+    }
+
+    .partner-stat strong{
+        max-width:55%;
+    }
+
+    .partner-card .btn{
+        min-height:50px;
+        margin-top:22px;
+    }
+
+}
+
+
+/*=====================================
+    VERY SMALL MOBILE
+======================================*/
+
+@media(max-width:360px){
+
+    .partner-left h1{
+        font-size:33px;
+    }
+
+    .partner-item{
+        font-size:12px;
+    }
+
+    .partner-card{
+        padding:28px 18px;
+    }
+
+    .partner-card h2{
+        font-size:27px;
+    }
+
+    .partner-stat span,
+    .partner-stat strong{
+        font-size:11px;
+    }
+
+}
