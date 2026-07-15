@@ -321,3 +321,85 @@ body{
     }
 
 }
+
+/*=====================================
+    PARTNER HERO FINAL DESKTOP FIX
+======================================*/
+
+@media(min-width:1101px){
+
+    .partner{
+        min-height:auto !important;
+        padding:90px 0 65px !important;
+    }
+
+    .partner .partner-wrapper{
+        min-height:auto !important;
+        grid-template-columns:minmax(0,1.2fr) minmax(400px,.8fr);
+        gap:100px;
+        align-items:center;
+    }
+
+    .partner-left h1{
+        max-width:760px;
+        margin:22px 0 18px;
+        font-size:58px;
+        line-height:1.06;
+    }
+
+    .partner-left > p{
+        max-width:680px;
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .partner-list{
+        margin:28px 0;
+        gap:12px;
+    }
+
+    .partner-item{
+        min-height:52px;
+        font-size:14px;
+    }
+
+    .partner-icon{
+        width:42px;
+        height:42px;
+        flex:0 0 42px;
+    }
+
+    .partner-left > .btn{
+        min-width:260px;
+    }
+
+    .partner-note{
+        margin-top:12px;
+        font-size:12px !important;
+    }
+
+    .partner-card{
+        max-width:500px;
+        padding:42px 45px;
+        border-radius:30px;
+    }
+
+    .partner-card h2{
+        margin-bottom:22px;
+        font-size:38px;
+    }
+
+    .partner-stat{
+        min-height:58px;
+    }
+
+    .partner-stat span,
+    .partner-stat strong{
+        font-size:14px;
+    }
+
+    .partner-card .btn{
+        margin-top:24px;
+    }
+
+}
