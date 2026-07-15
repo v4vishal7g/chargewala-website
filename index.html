@@ -10,8 +10,12 @@
         content="width=device-width, initial-scale=1.0">
 
     <title>ChargeWala | EV Charging Stations Across India</title>
-    <link rel="icon" type="image/png" href="/assets/images/logo.png">
-<link rel="shortcut icon" href="/assets/images/logo.png">
+    <!-- ChargeWala Favicon -->
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="theme-color" content="#00C853">
+   
 
     <meta
         name="description"
@@ -73,14 +77,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <meta property="og:image" content="https://chargewala.in/assets/images/logo.png">
 
 <!-- Organization Schema -->
+<!-- ChargeWala Official Organization & Website Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "ChargeWala",
-  "url": "https://chargewala.in/",
-  "logo": "https://chargewala.in/assets/images/logo.png",
-  "description": "ChargeWala is an EV charging platform helping EV drivers discover trusted charging stations across India."
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://chargewala.in/#organization",
+      "name": "ChargeWala",
+      "url": "https://chargewala.in/",
+      "logo": "https://chargewala.in/favicon.png",
+      "description": "ChargeWala is an EV charging platform in India helping EV drivers discover verified charging stations and connecting charging station owners with EV users.",
+      "email": "support@chargewala.in"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://chargewala.in/#website",
+      "url": "https://chargewala.in/",
+      "name": "ChargeWala",
+      "alternateName": "ChargeWala EV Charging",
+      "publisher": {
+        "@id": "https://chargewala.in/#organization"
+      }
+    }
+  ]
 }
 </script>
     
