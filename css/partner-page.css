@@ -886,3 +886,29 @@ body{
     }
 
 }
+/*=====================================
+    PARTNER APPLY BUTTON CLICK FIX
+======================================*/
+
+.partner-left,
+.partner-right,
+.partner-card{
+    position:relative;
+    z-index:10;
+}
+
+.partner-apply-btn{
+    position:relative;
+    z-index:50;
+    pointer-events:auto !important;
+    cursor:pointer !important;
+}
+
+.partner .hero-blob{
+    pointer-events:none !important;
+}
+
+.cursor-glow,
+.scroll-progress{
+    pointer-events:none !important;
+}
